@@ -3,7 +3,7 @@ from pymol import cmd
 
 
 @cmd.extend
-def gdt_seq(sel_mov, sel_ref, quiet=1):
+def gdt_seq(sel_mov, sel_ref, quiet=0):
     """
     sel_mov, sel_ref의 sequence alignment → 대응 CA mapping → GDT_TS 계산
     Usage: gdt_seq sel_movable, sel_reference
